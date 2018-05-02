@@ -1,0 +1,92 @@
+*{box-sizing: border-box;}
+body{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+/*Logo*/
+.logo,img 
+{
+   position:absolute;
+  display: block;
+   margin:auto;
+    overflow: hidden;
+    padding:2px;
+    margin: 20px;
+}
+/*Nav Colour*/
+.topnav{
+    background-color: black;
+    overflow: hidden;
+}
+/*style of links in nav*/
+.topnav a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/*nav hover*/
+.topnav a:hover{
+    background-color: lightgray;
+    color: blue;
+}
+/*Active nav*/
+.topnav a.active {
+    background-color:blue;
+    color: white;
+}
+/*Heading*/
+h1{
+    background-color: silver;
+    padding: .2px .2px .2px .2px;
+    margin: 4px 4px 4px 4px;
+    text-align: center;
+    border color: black;
+    border: 10px 10px 10px 10px;
+}
+/*Syle of paragraphs*/
+p{
+    color: black;
+    position: relative;
+    text-align: left;
+}
+/*Active Link on nav*/
+/*.nav a.active{
+    background-color: gray;
+    color: white;
+}*/
+/*Form Validation*/
+input:invalid{
+    box-shadow: 0 0 1px 1px gray;
+}
+.invalid{
+    box-shadow: 0 0 1px 1px gray;
+}
+.incorect{
+    box-shadow: 0 0 1px red;
+}
+footer{
+    background-color: white;
+    color: black;
+    position: static;
+}
+/*moblie*/
+@media screen and (max-width:600px){
+    .nav li{
+        float: none;
+    }
+    .nav li a{
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .nav li input[type=text]{
+        border: 1px solid gray;
+    }
+}
